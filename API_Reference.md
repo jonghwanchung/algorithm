@@ -31,6 +31,7 @@ v.erase(it, v.end()); // {1, 2, 3}
 -----
 # Container (Data Structure)
 ## string
+string.substr
 
 ## vector
 
@@ -52,8 +53,20 @@ for(int i = 0; i < participant.size(); i++){
 # Algorithm (Library)
 ## 검색
 - `find(first, last, )` : 
+```
+```
 
-find_if
+- `find_if(first, last, unary)` : It returns an iterator to the first element in the range [first,last) for which pred returns true.  (If no such element is found, the function returns last/end.
+```
+int myints[] = {1, 2, 3, 4};
+vector<int> v(myints, myints + sizeof(myints) / sizeof(int));
 
-prefix match
-string.substr
+auto it = find_if(v.begin(), v.end(), [](auto a){
+        return (a % 2 == 0) ? true : false;
+});
+if(it != v.end()){
+        cout << *it << endl;  // 2
+}
+```
+
+
