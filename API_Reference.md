@@ -22,6 +22,12 @@ v.erase(it, v.end()); // {1, 2, 3}
  2) **erase()** :
 
 
+
+-----
+# 접두어 찾기 (Prefix Match)
+
+
+
 -----
 # Container (Data Structure)
 ## string
