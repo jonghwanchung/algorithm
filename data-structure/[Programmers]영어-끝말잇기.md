@@ -34,14 +34,11 @@ tank → kick → know → wheel → land → dream → mother → robot → tan
 
 
 ## 풀이방법
-1) 끝말잇기의 규칙을 만족하는지 체크하기 위해, 바로 이전 단어의 마지막 character와 현재 단어의 첫번째 character가 동일한지 검사한다.  
-   (std::string::<span style="background-color:#fff5b1"> front() </span>, 
-<span style="background-color:#fff5b1"> 노란형광펜 </span>
-3) (, std::string::baack())
-4) 이미 말한 단어가 중복되는지 체크하기 위해, 자료구조(set)을 사용한다.
-5) 가장 먼저 탈락하는 사람의 번호와 몇 번째 차례에서 탈락하는지를 끝말잇기에 사용한 배열(words)에서의 순서값으로부터 계산한다.
-  - 탈락하는 사람의 번호 : (i % n) + 1
-  - 탈락한 라운드 : (i / n) + 1
+1) 끝말잇기의 규칙을 만족하는지 체크하기 위해, 바로 이전 단어의 마지막 character와 현재 단어의 첫번째 character가 동일한지 검사한다. (`std::string::front()`, `std::string::back()`)
+2) 이미 말한 단어가 중복되는지 체크하기 위해, 자료구조(`set`)을 사용한다.
+3) 가장 먼저 탈락하는 사람의 번호와 몇 번째 차례에서 탈락하는지를 끝말잇기에 사용한 배열(words)에서의 순서값으로부터 계산한다.
+  - 탈락하는 사람의 번호 : `(i % n) + 1`   ... 열
+  - 탈락한 라운드 : `(i / n) + 1`   ... 행
 
 
 ## 소스코드
