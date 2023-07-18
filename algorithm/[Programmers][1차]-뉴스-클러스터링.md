@@ -57,6 +57,10 @@ CE, RE, EN, CH}가 되므로, 두 문자열 사이의 자카드 유사도 J("FRA
 > 시간 복잡도
 > 오류?
 
+> [!NOTE]
+> Information the user should notice even if skimming.
+
+
 
 ## 소스코드
 ```C++
