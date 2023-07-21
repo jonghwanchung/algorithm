@@ -66,5 +66,4 @@ int solution(vector<string> want, vector<int> number, vector<string> discount) {
     
     return answer;
 }
-}
 ```
