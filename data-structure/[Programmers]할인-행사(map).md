@@ -31,7 +31,7 @@ XYZ 마트에서 할인하는 제품을 나타내는 문자열 배열 discount�
 3. sliding window에 해당하는 연속된 10일에 대해 "원하는 제품과 수량"을 충족하는지 검사 (`find_if`)
 
 
-## 
+## 소스코드
 ```C++
 #include <string>
 #include <vector>
